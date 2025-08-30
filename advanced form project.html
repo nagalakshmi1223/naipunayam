@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advanced Form Project</title>
+        <style>
+            .main
+            {
+                
+            padding:10px;
+                /* background-color:green; */
+                background-image: url(nature.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                color:darkblue;
+            }
+            hr{
+                margin:auto;
+                margin-top:10px;
+            }
+            .one{
+                background-color:red;
+                text-align:center;
+                width:15%;
+                color:white;
+                border-radius:6px;
+            }
+            hr{
+                margin:auto;
+                margin-top:2px;
+            }
+            .two
+            {
+                background-color:red;
+                text-align:center;
+                width:15%;
+                color:white;
+            }
+            div{
+                margin-bottom:2%;
+                
+            }
+            .box1{
+                display: flex;
+                justify-content: space-between;
+            }
+            
+            input,select{
+                width: 200px;
+                height: 20px;
+            }
+            .one:hover{
+                background-color:violet;
+            }
+            .box3
+            {
+                display:flex;
+                width: 20px;
+            }   
+            .four:hover{
+                background-color:aqua ;
+            } 
+            .box2{
+                display: flex;
+                gap: 21%;
+            }
+            
+            
+        
+                
+            
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <hr><hr>
+        <div class="one">
+            Personal Information
+        </div><br>
+        <div class="box1">
+            <div>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required/>
+            </div>
+        
+            <div>
+                <label for="aadhar">Aadhar Number</label><br>
+            <input type="number" id="aadhar" name="aadhar" required/>
+            </div>
+            <div>
+                <label for="username">Full Name</label><br>
+            <input type="text" id="username" name="username" required/>
+            </div>
+            
+        </div>
+        <div class="box1">
+            <div>
+                <label for="name">Father Name </label><br>
+            <input type="text" id="name" name="name" required/>
+            </div>
+            <div>
+            <label for="name">Age </label><br>
+            <input type="text" id="name" name="name" required/>
+        </div>
+            <div>
+                <label for="gender">Gender</label><br>
+            <select name="gender" id="gender">
+            <option value=""></option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option valye="Other">Other</option>
+            </select>
+            </div>
+            
+        </div>
+        <div class="box1">
+            <div>
+                <label for="status">Maritial Status</label><br>
+            <select name="status" id="status">
+                <option value=""></option>
+                <option value="married">Married</option>
+                <option value="unmarried">UnMarried</option>
+            </select>
+            </div>
+            <div>
+                <label for="Category">Category</label><br>
+            <select name="Category" id="Category">
+                <option value=""></option>
+                <option value="OC">OC</option>
+                <option value="BC">BC</option>
+                <option value="SC&ST">SC&ST</option>
+            </select>
+            </div>
+            <div>
+                <label for="religion">Religion</label><br>
+            <select name="religion" id="religion">
+                <option value=""></option>
+                <option value="hindu">Hindu</option>
+                <option value="christan">Christan</option>
+                <option value="Muslim">Muslim</option>
+            </select>
+            </div>
+            
+        </div>
+        
+        <div class="box2">
+            <div>
+            <label for="resident">Are You a resident of AP state</label><br>
+            <select name="resident" id="resident">
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            </div>
+            <div>
+            <label for="disability">Disability</label><br>
+            <select name="disability" id="disability">
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            </div>
+        </div>
+        <div>
+            <label for="myfile">Upload Profile Photo</label><br>
+            <input type="file" name="myfile" id="myfile" required/>
+        </div>
+        <hr><hr>
+        <div class="one">
+            Contact Information
+        </div><br>
+        <div class="box1">
+            <div>
+            <label for="email">Email address</label><br>
+            <input type="email" name="email" id="email">
+            </div>
+            <div>
+            <label for="mobile">Mobile Number</label><br>
+            <input type="number" name="mobile" id="mobile">
+            </div>
+        
+        <div>
+            <label for="mobile">Alternative Mobile number</label><br>
+            <input type="number" name="mobile" id="mobile">
+        </div>
+        </div>
+        <hr><hr>
+        <div class="one" >
+           Login Credinals
+        </div><br>
+        <div  class="box1">
+            <div>
+            <label for="username">User Name</label><br>
+            <input type="text" name="username" id="username">
+            </div>
+            <div>
+            <label for="password">Password</label><br>
+            <input type="password" name="password" id="password">
+            </div>
+        
+        <div>
+            <label for="password">Re-Enter Password</label><br>
+            <input type="password" name="password" id="password">
+        </div>
+        </div></body>
+        <hr><hr>
+        <div class="one">
+            Communication address
+        </div>
+        <div class="box3">
+        
+            <input type="radio" name="gender">
+            <label>Rural</label>
+            <input type="radio" name="gender">
+            <label>Urban</label>
+        
+        </div>
+        <div class="box1">
+            <div>
+            <label for="state">State</label><br>
+            <select name="state" id="state">
+                <option value=""></option>
+                <option value="andhra pradesh">Andhra Pradesh</option>
+                <option value="telamgana">telemgana</option>
+                <option value="thamilnadu">Thamilnadu</option>
+                <option value="kerala">Kerala</option>
+                <option value="karnataka">Karnataka</option>
+                <option value="up">U.p</option>
+                <option value="madhya pradesh">Madhya Pradesh</option>
+                <option value="gujarath">Gujarath</option>
+                <option value="rajasthan">Rajasthan</option>
+            </select>
+            </div>
+            <div>
+            <label for="district">District</label><br>
+            <select name="district" id="district">
+                <option value=""></option>
+                <option value="krishna">Krishna</option>
+                <option value="guntur">Guntur</option>
+                <option value="ntr">Ntr</option>
+                <option value="palanadu">Palanadu</option>
+                <option value="West Godhavari">West Godhavari</option>
+                <option value="East godhavari">east Godhavari</option>
+                <option value="kurnool">Kurnool</option>
+                <option value="kadapa">Kadapa</option>
+            </select>
+            </div>
+            <div>
+            <label for="mandal">mandal</label><br>
+            <select name="mandal" id="mandal">
+                <option value=""></option>
+                <option value="amaravathi">Amaravathi</option>
+                <option value="milavaram">Milavaram</option>
+                <option value="nandhyal">Nandhyal</option>
+                <option value="thullur">Thullur</option>
+                <option value="prathipadu">Prathipadu</option>
+                <option value="ponnur">Ponnur</option>
+            </select>
+            </div>
+        </div>
+        <div class="box1">
+            <div>
+            <label for="parliment">Parliment Constituency</label><br>
+            <select name="parliment" id="parliment">
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            </div>
+            <div>
+            <label for="assembly">Assembly Constituency</label><br>
+            <select name="assembly" id="assembly">
+                <option value=""></option>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            </div>
+        <div>
+            <label for="house number">House Number</label><br>
+            <input type="housenumber" name="house number" id="house number">
+        </div>
+        </div>
+        <div class="box1">
+            <div>
+            <label for="no">Ward No</label><br>
+            <input type="number" name="no" id="no">
+            </div>
+            <div>
+            <label for="street">Street</label><br>
+            <input type="text" name="street" id="street">
+            </div>
+            <div>
+            <label for="city">City</label><br>
+            <input type="text" nmae="city" id="city">
+            </div>
+        </div>
+        <div>
+            <label for="pincode">Pincode</label><br>
+            <input type="number" name="pincode" id="pincode">
+        </div>
+        <div>
+            <button style="color:white;background-color:blue;text-align:center;margin-left:40%;">Next</button>
+        </div>
+    </div>
+</body>
+</html>
